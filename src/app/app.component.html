@@ -1,0 +1,29 @@
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-12" style="background-color:lavenderblush;">
+      <p id="clock"> </p>
+      <h2 style="text-align: center;position: relative;">IONIXX TIME SHEET</h2>
+      <div style="position: relative;top:-30px;float:right;padding-right: 20px;font-size: medium"><p>Welcome {{user.name}}
+      <input type="submit" class="btn btn-info" style="margin-left: 25px" value="logout">
+
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 12px">
+    <div class="col-sm-12" style="background-color:snow;">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary" style="padding: 8px">TimesheetSummary</button>
+        <button type="button" class="btn btn-primary" style="padding: 8px">Any Day Task</button>
+      </div>
+  </div>
+</div>
+  <div style="margin-top: 10px">
+    select date <input type="date" [(ngModel)]="date">
+    <button style="margin-left: 8px " type="button" class="btn btn-primary">Primary</button>{{date}}
+  </div>
+  <div >
+    <button type="button" class="btn btn-primary" style="position:relative;top:-32px;float: right;margin-right: 20px;">START DAY</button>
+    <button type="button" class="btn btn-primary" style="position:relative;float: right;top: -32px;margin-right: 18px;">ADD LEAVE TASK</button>
+  </div>
